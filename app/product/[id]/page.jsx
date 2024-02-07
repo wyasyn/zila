@@ -16,9 +16,9 @@ export async function generateMetadata({ params: { id } }) {
     return {
         title: product.name + " - Zila",
         description: product.description,
-        // openGraph: {
-        //     images: [{ url: product.imageUrl }],
-        // },
+        openGraph: {
+            images: [{ url: product.imageUrl }],
+        },
     };
 }
 
